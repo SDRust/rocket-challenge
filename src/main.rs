@@ -17,7 +17,7 @@ struct RocketData {
     to_gto: String,
     to_other: String,
     launches: String,
-    first_fight: String,
+    first_flight: String,
     last_flight: String,
     retired: String
 }
@@ -68,6 +68,8 @@ fn to_json_arr(rocket_data: Vec<RocketData>) -> Vec<Value> {
 #[get("/")]
 fn index() -> Result<JSON<Value>, ParseError> {
     let rocket_data = parse_csv()?;
+
+    let rocket_json = to_json_arr(rocket_data);
 
     Ok(JSON(json!(rocket_json)))
 }
