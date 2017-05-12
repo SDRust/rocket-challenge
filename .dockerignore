@@ -1,0 +1,3 @@
+src
+target
+!target/x86_64-unknown-linux-musl/release/rocket-challenge

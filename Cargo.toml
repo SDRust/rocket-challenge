@@ -1,0 +1,16 @@
+[package]
+name = "rocket-challange"
+version = "0.1.6"
+authors = ["Corbin Uselton <c@decimal.io>"]
+
+[dependencies]
+rocket = "0.2.6"
+file = "1.1.1"
+csv = "0.15.0"
+rocket_codegen = "0.2.6"
+rocket_contrib  = "0.2.6"
+rustc-serialize = "0.3.24"
+slug = "0.1.2"
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
